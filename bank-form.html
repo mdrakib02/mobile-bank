@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary mt-4">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3 ">
+                <!-- Main Balance Start -->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Total Balance</div>
+                      <div id="current-balance" class="stat-value">8400</div>
+                    </div>
+                  </div>
+                <!-- Main Balance end -->
+                 <div class="divider"></div>
+                 <!-- Button Start -->
+                  <div class="mt-5">
+                    <button id="add-money-button" class="btn">Add Money</button>
+                    <button id="cash-button" class="btn">Cash Out</button>
+                  </div>
+                  <!-- Button End -->
+
+                  <!-- Add Money Form Start -->
+                  <div id="add-money-feature" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-6">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="your-amount"  type="text" placeholder="Entire Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Code</span>
+                        </label>
+                        <input id="your-pin" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="send-button" class="btn bg-amber-500">Send</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Add Money Form End -->
+                   <!-- Cash Out Start -->
+                   <div id="cash-out-feature" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-6">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="cash-out-amount"  type="text" placeholder="Entire Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Code</span>
+                        </label>
+                        <input id="cash-out-pin" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out-button" class="btn bg-amber-500 border-none ">Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                    <!-- Cash Out End  -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/form.js"></script>
+    <script src="./js/cash-out.js"></script>
+    <script src="./js/features.js"></script>
+</body>
+</html>

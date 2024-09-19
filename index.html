@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <script src="https://kit.fontawesome.com/db2d7792d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary mt-4">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3 ">
+                <!-- Main Balance Start -->
+                <div class="stats shadow">
+                    <div class="stat">
+                        <i class="fa-solid fa-money-check text-6xl text-amber-500"></i>
+                      
+                    </div>
+                  </div>
+                <!-- Main Balance end -->
+                 <div class="divider"></div>
+                  <!-- Add Money Form Start -->
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-6">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Phone Number</span>
+                        </label>
+                        <input id="number" type="text" placeholder="Your Number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Code</span>
+                        </label>
+                        <input id="your-pin" type="password" placeholder="Your Pin" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="login-button-one" class="btn bg-amber-500 border-none text-black">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Add Money Form End -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/index.js"></script>
+</body>
+</html>
